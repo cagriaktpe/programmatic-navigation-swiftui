@@ -8,38 +8,34 @@
 import SwiftUI
 
 struct MenuView: View {
-    
-    @State private var path: NavigationPath = NavigationPath()
+    @StateObject private var routerManager = NavigationRouter()
     @StateObject private var cartManager = ShoppingCartManager()
-    
+
     var body: some View {
-        
-        NavigationStack(path: $path) {
-            
+        NavigationStack(path: $routerManager.routes) {
             List {
-                
                 Section("Foods") {
                     ForEach(foods) { food in
-                        
-                        NavigationLink(value: food) {
+
+                        NavigationLink(value: Route.menuItem(item: food)) {
                             MenuItemView(item: food)
                         }
                     }
                 }
-                
+
                 Section("Drinks") {
                     ForEach(drinks) { drink in
-                        
-                        NavigationLink(value: drink) {
+
+                        NavigationLink(value: Route.menuItem(item: drink)) {
                             MenuItemView(item: drink)
                         }
                     }
                 }
-                
+
                 Section("Desserts") {
                     ForEach(desserts) { dessert in
-                        
-                        NavigationLink(value: dessert) {
+
+                        NavigationLink(value: Route.menuItem(item: dessert)) {
                             MenuItemView(item: dessert)
                         }
                     }
@@ -48,20 +44,11 @@ struct MenuView: View {
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
                     CartButton(count: cartManager.items.count) {
-                        
                     }
                 }
             }
             .navigationTitle("Menu")
-            .navigationDestination(for: Food.self) { item in
-                FoodDetailView(food: item)
-            }
-            .navigationDestination(for: Drink.self) { item in
-                DrinkDetailView(drink: item)
-            }
-            .navigationDestination(for: Dessert.self) { item in
-                DessertDetailView(dessert: item)
-            }
+            .navigationDestination(for: Route.self) { $0 }
         }
         .environmentObject(cartManager)
     }

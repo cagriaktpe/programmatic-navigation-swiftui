@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81E3FE782B21A7B800BA3D7F /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E3FE772B21A7B800BA3D7F /* Route.swift */; };
+		81E3FE7A2B21AAA300BA3D7F /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E3FE792B21AAA300BA3D7F /* NavigationRouter.swift */; };
 		E702AE662991625E00ABE61B /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702AE652991625E00ABE61B /* CartButton.swift */; };
 		E702AE68299166E100ABE61B /* ShoppingCartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702AE67299166E100ABE61B /* ShoppingCartManager.swift */; };
 		E702AE6A2991793600ABE61B /* IngredientsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702AE692991793600ABE61B /* IngredientsDetailView.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81E3FE772B21A7B800BA3D7F /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		81E3FE792B21AAA300BA3D7F /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
 		E702AE652991625E00ABE61B /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
 		E702AE67299166E100ABE61B /* ShoppingCartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartManager.swift; sourceTree = "<group>"; };
 		E702AE692991793600ABE61B /* IngredientsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsDetailView.swift; sourceTree = "<group>"; };
@@ -224,6 +228,8 @@
 		E75159A4298D680800CDEC3E /* Introduction to NavigationStack */ = {
 			isa = PBXGroup;
 			children = (
+				81E3FE772B21A7B800BA3D7F /* Route.swift */,
+				81E3FE792B21AAA300BA3D7F /* NavigationRouter.swift */,
 				E73340B42992493400F8B945 /* Allergies */,
 				E73340B22992491F00F8B945 /* Ingredients */,
 				E73340B02992490A00F8B945 /* Desserts */,
@@ -319,7 +325,9 @@
 			files = (
 				E75159A8298D680800CDEC3E /* MenuView.swift in Sources */,
 				E702AE662991625E00ABE61B /* CartButton.swift in Sources */,
+				81E3FE7A2B21AAA300BA3D7F /* NavigationRouter.swift in Sources */,
 				E733409F29917C9E00F8B945 /* LocationsDetailView.swift in Sources */,
+				81E3FE782B21A7B800BA3D7F /* Route.swift in Sources */,
 				E75159A6298D680800CDEC3E /* Introduction_to_NavigationStackApp.swift in Sources */,
 				E702AE6C29917AAC00ABE61B /* AllergiesDetailView.swift in Sources */,
 				E72C83B7298E6F7E0020DB0A /* DessertDetailView.swift in Sources */,
