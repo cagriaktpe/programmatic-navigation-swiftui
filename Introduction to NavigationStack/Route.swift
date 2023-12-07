@@ -13,6 +13,8 @@ enum Route {
     case cart
     case ingredients(items: [Ingredient])
     case allergies(items: [Allergie])
+    case locations(places: [Location])
+    case map(location: Location)
 }
 
 extension Route: Hashable {
@@ -31,6 +33,10 @@ extension Route: Hashable {
             return lhsItems == rhsItems
         case (.allergies(let lhsItems), .allergies(let rhsItems)):
             return lhsItems == rhsItems
+        case (.locations(let lhsPlaces), .locations(let rhsPlaces)):
+            return lhsPlaces == rhsPlaces
+        case (.map(let lhsLocation), .map(let rhsLocation)):
+            return lhsLocation.id == rhsLocation.id
         default:
             return false
         }
@@ -58,6 +64,11 @@ extension Route: View {
             IngredientsDetailView(ingredients: items)
         case .allergies(let items):
             AllergiesDetailView(allergies: items)
+        case .locations(let places):
+            LocationsDetailView(locations: places)
+        case .map(let location):
+            LocationMapView(location: location)
         }
+        
     }
 }
