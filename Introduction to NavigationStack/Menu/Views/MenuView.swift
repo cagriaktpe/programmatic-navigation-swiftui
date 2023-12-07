@@ -52,6 +52,7 @@ struct MenuView: View {
             .navigationDestination(for: Route.self) { $0 }
         }
         .environmentObject(cartManager)
+        .environmentObject(routerManager)
     }
 }
 
