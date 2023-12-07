@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "C8F3EF45-0731-4BB8-B12E-A15096D19FB3",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Introduction to NavigationStack.xcodeproj",
+      "identifier" : "E75159A1298D680800CDEC3E",
+      "name" : "Introduction to NavigationStack"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Introduction to NavigationStack.xcodeproj",
+        "identifier" : "81E3FE7E2B21D6AD00BA3D7F",
+        "name" : "Introduction to NavigationStackTests"
+      }
+    }
+  ],
+  "version" : 1
+}

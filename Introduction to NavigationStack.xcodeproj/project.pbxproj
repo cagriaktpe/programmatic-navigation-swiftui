@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		81E3FE782B21A7B800BA3D7F /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E3FE772B21A7B800BA3D7F /* Route.swift */; };
 		81E3FE7A2B21AAA300BA3D7F /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E3FE792B21AAA300BA3D7F /* NavigationRouter.swift */; };
+		81E3FE892B21D6D400BA3D7F /* RouteManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E3FE882B21D6D400BA3D7F /* RouteManagerTests.swift */; };
 		E702AE662991625E00ABE61B /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702AE652991625E00ABE61B /* CartButton.swift */; };
 		E702AE68299166E100ABE61B /* ShoppingCartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702AE67299166E100ABE61B /* ShoppingCartManager.swift */; };
 		E702AE6A2991793600ABE61B /* IngredientsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702AE692991793600ABE61B /* IngredientsDetailView.swift */; };
@@ -27,9 +28,22 @@
 		E784B5F6298D6EC800558357 /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E784B5F5298D6EC800558357 /* FoodDetailView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		81E3FE832B21D6AD00BA3D7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E751599A298D680800CDEC3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E75159A1298D680800CDEC3E;
+			remoteInfo = "Introduction to NavigationStack";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		81E3FE772B21A7B800BA3D7F /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		81E3FE792B21AAA300BA3D7F /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
+		81E3FE7F2B21D6AD00BA3D7F /* Introduction to NavigationStackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Introduction to NavigationStackTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81E3FE882B21D6D400BA3D7F /* RouteManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteManagerTests.swift; sourceTree = "<group>"; };
+		81E3FE8A2B21D88900BA3D7F /* Introduction to NavigationStack.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Introduction to NavigationStack.xctestplan"; sourceTree = "<group>"; };
 		E702AE652991625E00ABE61B /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
 		E702AE67299166E100ABE61B /* ShoppingCartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartManager.swift; sourceTree = "<group>"; };
 		E702AE692991793600ABE61B /* IngredientsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsDetailView.swift; sourceTree = "<group>"; };
@@ -50,6 +64,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		81E3FE7C2B21D6AD00BA3D7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E751599F298D680800CDEC3E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81E3FE802B21D6AD00BA3D7F /* Introduction to NavigationStackTests */ = {
+			isa = PBXGroup;
+			children = (
+				81E3FE882B21D6D400BA3D7F /* RouteManagerTests.swift */,
+			);
+			path = "Introduction to NavigationStackTests";
+			sourceTree = "<group>";
+		};
 		E73340A42992483A00F8B945 /* Cart */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,7 +241,9 @@
 		E7515999298D680800CDEC3E = {
 			isa = PBXGroup;
 			children = (
+				81E3FE8A2B21D88900BA3D7F /* Introduction to NavigationStack.xctestplan */,
 				E75159A4298D680800CDEC3E /* Introduction to NavigationStack */,
+				81E3FE802B21D6AD00BA3D7F /* Introduction to NavigationStackTests */,
 				E75159A3298D680800CDEC3E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -221,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				E75159A2298D680800CDEC3E /* Introduction to NavigationStack.app */,
+				81E3FE7F2B21D6AD00BA3D7F /* Introduction to NavigationStackTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -256,6 +288,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		81E3FE7E2B21D6AD00BA3D7F /* Introduction to NavigationStackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81E3FE852B21D6AD00BA3D7F /* Build configuration list for PBXNativeTarget "Introduction to NavigationStackTests" */;
+			buildPhases = (
+				81E3FE7B2B21D6AD00BA3D7F /* Sources */,
+				81E3FE7C2B21D6AD00BA3D7F /* Frameworks */,
+				81E3FE7D2B21D6AD00BA3D7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81E3FE842B21D6AD00BA3D7F /* PBXTargetDependency */,
+			);
+			name = "Introduction to NavigationStackTests";
+			productName = "Introduction to NavigationStackTests";
+			productReference = 81E3FE7F2B21D6AD00BA3D7F /* Introduction to NavigationStackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E75159A1298D680800CDEC3E /* Introduction to NavigationStack */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E75159B0298D680A00CDEC3E /* Build configuration list for PBXNativeTarget "Introduction to NavigationStack" */;
@@ -280,9 +330,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					81E3FE7E2B21D6AD00BA3D7F = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = E75159A1298D680800CDEC3E;
+					};
 					E75159A1298D680800CDEC3E = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -302,11 +356,19 @@
 			projectRoot = "";
 			targets = (
 				E75159A1298D680800CDEC3E /* Introduction to NavigationStack */,
+				81E3FE7E2B21D6AD00BA3D7F /* Introduction to NavigationStackTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		81E3FE7D2B21D6AD00BA3D7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E75159A0298D680800CDEC3E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -319,6 +381,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		81E3FE7B2B21D6AD00BA3D7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81E3FE892B21D6D400BA3D7F /* RouteManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E751599E298D680800CDEC3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -344,7 +414,62 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		81E3FE842B21D6AD00BA3D7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E75159A1298D680800CDEC3E /* Introduction to NavigationStack */;
+			targetProxy = 81E3FE832B21D6AD00BA3D7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		81E3FE862B21D6AD00BA3D7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6WDBVB643;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sametcagriaktepe.Introduction-to-NavigationStackTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Introduction to NavigationStack.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Introduction to NavigationStack";
+			};
+			name = Debug;
+		};
+		81E3FE872B21D6AD00BA3D7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6WDBVB643;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sametcagriaktepe.Introduction-to-NavigationStackTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Introduction to NavigationStack.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Introduction to NavigationStack";
+			};
+			name = Release;
+		};
 		E75159AE298D680A00CDEC3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -522,6 +647,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		81E3FE852B21D6AD00BA3D7F /* Build configuration list for PBXNativeTarget "Introduction to NavigationStackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81E3FE862B21D6AD00BA3D7F /* Debug */,
+				81E3FE872B21D6AD00BA3D7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E751599D298D680800CDEC3E /* Build configuration list for PBXProject "Introduction to NavigationStack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
