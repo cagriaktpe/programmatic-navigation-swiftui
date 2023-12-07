@@ -8,10 +8,15 @@
 import Foundation
 import SwiftUI
 
-enum Route: View, Hashable {
+enum Route {
     case menuItem(item: any MenuItem)
     case cart
+    case ingredients(items: [Ingredient])
+    case allergies(items: [Allergie])
+}
 
+extension Route: Hashable {
+    
     func hash(into hasher: inout Hasher) {
         hasher.combine(hashValue)
     }
@@ -22,14 +27,21 @@ enum Route: View, Hashable {
             return lhsItem.id == rhsItem.id
         case (.cart, .cart):
             return true
+        case (.ingredients(let lhsItems), .ingredients(let rhsItems)):
+            return lhsItems == rhsItems
+        case (.allergies(let lhsItems), .allergies(let rhsItems)):
+            return lhsItems == rhsItems
         default:
             return false
         }
     }
+    
+}
 
+extension Route: View {
     var body: some View {
         switch self {
-        case let .menuItem(item):
+        case .menuItem(let item):
             switch item {
             case is Food:
                 FoodDetailView(food: item as! Food)
@@ -42,6 +54,10 @@ enum Route: View, Hashable {
             }
         case .cart:
             CartView()
+        case .ingredients(let items):
+            IngredientsDetailView(ingredients: items)
+        case .allergies(let items):
+            AllergiesDetailView(allergies: items)
         }
     }
 }
