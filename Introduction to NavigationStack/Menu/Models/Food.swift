@@ -295,8 +295,8 @@ let desserts: [Dessert] = [
                Allergie(name: "Allergie 3")
             ],
             locations: [
-               Location(name: "Location 1",
-                        long: -0.1275, lat: 51.507222),
+               Location(name: "Izmir",
+                        long:  27.134898, lat: 38.428673),
                Location(name: "Location 2",
                         long: -0.1275, lat: 51.507222),
                Location(name: "Location 3",

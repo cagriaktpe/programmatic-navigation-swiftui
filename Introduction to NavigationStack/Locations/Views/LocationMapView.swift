@@ -10,6 +10,8 @@ import MapKit
 
 struct LocationMapView: View {
     
+    @EnvironmentObject private var routerManager: NavigationRouter
+    
     let location: Location
     
     var body: some View {
@@ -30,12 +32,12 @@ struct LocationMapView: View {
                     
                     Group {
                         Button("Back to Menu") {
-                            // TODO: Handle Menu Navigation
+                            routerManager.reset()
                         }
 
                         
                         Button("Back to Locations") {
-                            // TODO: Handle Menu Navigation
+                            routerManager.goBack()
                         }
 
                     }
@@ -52,5 +54,6 @@ struct LocationMapView_Previews: PreviewProvider {
         NavigationStack {
             LocationMapView(location: foods[2].locations![0])
         }
+        .environmentObject(NavigationRouter())
     }
 }
